@@ -1,0 +1,161 @@
+.nv-link{
+  font-weight: 600;
+  color: #000 !important;
+  padding: 0 10px 0 10px;
+  text-decoration: none !important;
+}
+
+.view-shippings-modal{
+  width: 80% !important;
+}
+
+.track-search-bg{
+  background-color: #f0f0f0 !important;
+  height: auto !important;
+  padding: 0px 0 50px 0 !important;
+}
+
+.table_headbold:nth-child(odd) {
+  font-weight: 600 !important;
+}
+
+footer{
+  position: absolute;
+  bottom: 100;
+  width: 100%;
+}
+
+
+/* Print Only Proof within the Pop-Up Modal Tracking Page... */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  #printable-modal-content,
+  #printable-modal-content * {
+    visibility: visible;
+  }
+
+  #printable-modal-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white; /* Optional: force background for better output */
+    z-index: 9999; /* Ensure it stays on top */
+  }
+}
+
+
+/* To Hide Buttons While Printing */
+@media print {
+  .navigation-buttons {
+    display: none !important;
+  }
+}
+
+/* Unique Code/Reference Generator Css */
+.generator-container {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px;
+  background: #fefefe;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+h2 {
+  color: #222;
+  margin-bottom: 25px;
+}
+
+.code-display {
+  background-color: #111;
+  color: #0f0;
+  font-size: 1.6rem;
+  padding: 12px 18px;
+  border-radius: 10px;
+  margin: 0 auto 30px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Courier New', monospace;
+  white-space: nowrap;
+  transition: width 0.3s ease;
+}
+
+.code-text {
+  flex-grow: 1;
+  text-align: left;
+  letter-spacing: 1px;
+  padding-right: 12px;
+}
+
+.copy-button {
+  background: none;
+  border: none;
+  color: #0f0;
+  font-size: 1.4rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin-left: auto;
+  transition: transform 0.2s ease;
+}
+
+.copy-button:hover {
+  transform: scale(1.2);
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.length-selector {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.length-selector input[type='number'] {
+  width: 70px;
+  padding: 6px 10px;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.length-note {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+/* Red button like Bootstrap */
+.danger-button {
+  padding: 10px 24px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.danger-button:hover {
+  background-color: #c82333;
+}
+/* Unique Code/Reference Generator Css Ends here... */
+
+
