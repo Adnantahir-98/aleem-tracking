@@ -5,9 +5,11 @@ import Navbar from './Components/Navbar'
 import Footer from "./Components/Footer"
 
 import Home from './Screens/Home'
+import Login from './Screens/Login'
 import Tracking from "./Screens/Tracking"
 import Shippment from './Screens/CreateShippment'
 import Page404NotFound from "./Screens/Page404"
+
 
 
 const App = () => {
@@ -16,6 +18,7 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route index exact element={<Home />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/tacking" exact element={<Tracking />} />
         <Route path="/create-shippment" exact element={<Shippment />} />
         <Route path="*" exact element={<Page404NotFound />} />

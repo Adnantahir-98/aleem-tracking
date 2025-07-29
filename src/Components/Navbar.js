@@ -24,7 +24,7 @@ const NavbarComponent = () => {
                         <Link to="/services" className='m-2 nv-link'>Product & Services</Link>
                     </Nav>
                     <Nav className='ms-auto'>
-                        <Link to="/" className='m-2 btn btn-danger rounded-pill px-4'>
+                        <Link to="/login" className='m-2 btn btn-danger rounded-pill px-4'>
                             Login
                             <FaAngleRight />
                         </Link>

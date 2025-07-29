@@ -137,7 +137,7 @@ const UniqueNumberGenerator = () => {
         </div>
 
         <button className="danger-button" onClick={generateUniqueCode}>
-          Generate Unique Reference
+          Generate Reference
         </button>
       </div>
     </div>

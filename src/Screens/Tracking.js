@@ -22,11 +22,25 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 import { FaRegClock } from "react-icons/fa";
+import { MdWarehouse } from "react-icons/md";
 import { RiLock2Line } from "react-icons/ri";
+import { FaWarehouse } from "react-icons/fa6";
 import { FaAngleRight } from "react-icons/fa6";
+import { FaTruckPlane } from "react-icons/fa6";
 import { FaCheckCircle } from "react-icons/fa";
+import { IoIosAirplane } from "react-icons/io";
+import { LuPackageCheck } from "react-icons/lu";
+import { GiReceiveMoney } from "react-icons/gi";
 import { IoCloseOutline } from "react-icons/io5";
+import { TbTruckDelivery } from "react-icons/tb";
+import { FaPlaneArrival } from "react-icons/fa6";
 import { IoLocationOutline } from "react-icons/io5";
+import { MdOutlineFlightTakeoff } from "react-icons/md";
+import { IoShieldCheckmarkSharp } from "react-icons/io5";
+
+import {Fade, Flip, Slide, Zoom } from "react-awesome-reveal";
+
+
 
 import { useState } from 'react';
 
@@ -446,6 +460,111 @@ const Tracking = () => {
           </Row>
         </Container>
       </section>
+
+
+      <Container className='my-5'>
+        <Row className='m-auto'>
+          <Col md={2} lg={2}>
+            <Flip cascade triggerOnce>
+              <Card className='shadow'>
+                <Row className='text-center p-3'>
+                  <h5 className='text-center'>Rabwa</h5>
+                  <Col md={6} lg={6} >
+                    <h1 className='text-danger'><MdWarehouse /></h1>
+                    Booking   <br />
+                    <small className='text-muted'>29 July</small>  <br />
+                    <small className='text-muted'>51 pcs, 9kg</small> <br />
+                    <input type="checkbox" checked style={{ accentColor: 'green' }} />
+                  </Col>
+                  <Col md={6} lg={6}>
+                    <h1 className='text-danger'><LuPackageCheck /></h1>
+                    Depart    <br />
+                    <small className='text-muted'>TK0732</small>  <br />
+                    <small className='text-muted'>51 pcs, 9kg</small> <br />
+                    <input type="checkbox" checked style={{ accentColor: 'green' }} />
+                  </Col>
+                </Row>
+              </Card>
+            </Flip>
+          </Col>
+          <Col md={1} className='my-5 text-center'><h1><Slide direction='left' triggerOnce delay={500}><IoIosAirplane /></Slide></h1></Col>
+          <Col md={2} lg={2}>
+            <Flip delay={25} cascade triggerOnce>
+              <Card className='shadow'>
+                <Row className='text-center p-3'>
+                  <h5 className='text-center'>Lahore Airport</h5>
+                  <Col md={6} lg={6} >
+                    <h1 className='text-danger'><FaWarehouse /></h1>
+                    Facility Center   <br />
+                    <small className='text-muted'>29 July</small>  <br />
+                    <small className='text-muted'>51 pcs, 9kg</small> <br />
+                    <input type="checkbox" checked style={{ accentColor: 'green' }} />
+                  </Col>
+                  <Col md={6} lg={6}>
+                    <h1 className='text-danger'><MdOutlineFlightTakeoff /></h1>
+                    Flight Depart    <br />
+                    <small className='text-muted'>TK0732</small>  <br />
+                    <small className='text-muted'>51 pcs, 9kg</small> <br />
+                    <input type="checkbox" checked style={{ accentColor: 'green' }} />
+                  </Col>
+                </Row>
+              </Card>
+            </Flip>
+
+          </Col>
+          <Col md={1} className='my-5 text-center text-muted'><h1><Slide direction='left' triggerOnce delay={600}><IoIosAirplane /></Slide></h1></Col>
+          <Col md={2} lg={2}>
+            <Flip delay={25} cascade triggerOnce>
+              <Card className='shadow'>
+                <Row className='text-center p-3'>
+                  <h5 className='text-center'>United Kingdom</h5>
+                  <Col md={6} lg={6} >
+                    <h1 className='text-muted'><TbTruckDelivery /></h1>
+                    In Transit   <br />
+                    <small className='text-muted'>29 July</small>  <br />
+                    <small className='text-muted'>51 pcs, 9kg</small> <br />
+                    <input type="checkbox" checked style={{ accentColor: 'grey' }} />
+                  </Col>
+                  <Col md={6} lg={6}>
+                    <h1 className='text-muted'><FaPlaneArrival /></h1>
+                    Flight Arrived    <br />
+                    <small className='text-muted'>TK0732</small>  <br />
+                    <small className='text-muted'>51 pcs, 9kg</small> <br />
+                    <input type="checkbox" checked style={{ accentColor: 'grey' }} />
+                  </Col>
+                </Row>
+              </Card>
+            </Flip>
+
+          </Col>
+          <Col md={1} className='my-5 text-center text-muted'><h1><Slide direction='left' triggerOnce delay={700}><IoIosAirplane /></Slide></h1></Col>
+          <Col md={2} lg={2}>
+            <Flip delay={25} cascade triggerOnce>
+              <Card className='shadow'>
+                <Row className='text-center p-3'>
+                  <h5 className='text-center'>Europe</h5>
+                  <Col md={6} lg={6} >
+                    <h1 className='text-muted'><FaTruckPlane /></h1>
+                    In Transit   <br />
+                    <small className='text-muted'>29 July</small>  <br />
+                    <small className='text-muted'>51 pcs, 9kg</small> <br />
+                    <input type="checkbox" checked style={{ accentColor: 'grey' }} />
+                  </Col>
+                  <Col md={6} lg={6}>
+                    <h1 className='text-muted'><GiReceiveMoney /></h1>
+                    Delivered    <br />
+                    <small className='text-muted'>TK0732</small>  <br />
+                    <small className='text-muted'>51 pcs, 9kg</small> <br />
+                    <input type="checkbox" checked style={{ accentColor: 'grey' }} />
+                  </Col>
+                </Row>
+              </Card>
+            </Flip>
+
+          </Col>
+          <Col md={1} className='my-5 text-center text-success'><h1><Zoom triggerOnce><Fade triggerOnce duration={3500}><IoShieldCheckmarkSharp /></Fade></Zoom></h1></Col>
+        </Row>
+      </Container>
 
 
       <Card className='container-fluid border-0 my-5 w-75'>
